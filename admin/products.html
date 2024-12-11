@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/products.css">
+    <link rel="stylesheet" href="./assets/vendor/fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="./assets/vendor/bootstrap-5.3.1-dist/css/bootstrap.rtl.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="open-ul-options">
+            <i class="fa fa-bars text-white position-fixed" style="font-size: 15pt;" id="open-aside"></i>
+        </div>
+        <h1 class="d-flex flex-column text-center h5 text-white"><span><img src="./assets/media/CoffeeLogo.png"
+                    alt="CoffeeLogo"></span>کافه</h1>
+    </header>
+
+    <hr style="width: 100%;height: 2px;background-color: #dbc1ac;">
+
+    <main class="container w-100">
+
+        <aside class="aside">
+            <img src="./assets/media/peakpx (8).jpg" class="asideImg" alt="">
+            <ul>
+                <li>محصولات</li>
+                <li>سفارشات</li>
+                <li>آمار</li>
+            </ul>
+        </aside>
+        <div class="categories text-white text-center">
+            <div class="category">
+                <img class="category-img" src="./assets/media/red-fish-icon-free-vector.png" alt="" />
+                <figcaption>ماهی</figcaption>
+            </div>
+
+            <div class="category">
+                <img class="category-img" src="./assets/media/red-fish-icon-free-vector.png" alt="" />
+                <figcaption>ماهی</figcaption>
+            </div>
+
+            <div class="category">
+                <img class="category-img" src="./assets/media/red-fish-icon-free-vector.png" alt="" />
+                <figcaption>ماهی</figcaption>
+            </div>
+
+            <div class="category">
+                <img class="category-img" src="./assets/media/red-fish-icon-free-vector.png" alt="" />
+                <figcaption>ماهی</figcaption>
+            </div>
+
+            <div class="category">
+                <img class="category-img" src="./assets/media/red-fish-icon-free-vector.png" alt="" />
+                <figcaption>ماهی</figcaption>
+            </div>
+
+            <div class="category">
+                <img class="category-img" src="./assets/media/red-fish-icon-free-vector.png" alt="" />
+                <figcaption>ماهی</figcaption>
+            </div>
+
+            <div class="category" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#addTagModal">
+                <img class="category-img" src="./assets/media/icons8-blank-50.png" alt="" />
+                <figcaption>افزودن تگ</figcaption>
+            </div>
+        </div>
+
+        <div class="prs text-white text-center">
+            <div id="blankPr" class="pr d-flex align-items-center">
+                <div>
+                    <button id="blankPr-image-btn" class="btn btn-secondary fa fa-file-image"></button>
+                    <input id="blankPr-file" type="file" accept="image/*" hidden>
+                    <img id="blankPr-img" class="pr-img" alt="">
+                    <div>
+                        <input placeholder="نام" type="text" class="form-control input-blank-pr" name="name">
+                    </div>
+                </div>
+
+                <hr class="h-100 bg-primary" style="width: 2px;">
+
+                <div>
+                    <div>
+                        <input placeholder="کلید واژه..." type="text" class="form-control input-blank-pr" name="describe">
+                    </div>
+                    
+                    <p>
+                        <span><input placeholder="قیمت" type="text" class="form-control input-blank-pr" name="price"></span> تومان</p>
+                    <div class="d-flex align-items-center" style="gap: 5px;">
+                        <button class="btn btn-primary fa fa-add d-block m-auto"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-secondary buy-btn">خرید: <span id="Totalprice"></span></button>
+    </main>
+
+    <div class="modal fade" tabindex="-1" id="addTagModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">تگ جدید</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body m-auto">
+                    <div class="addNewTagForm">
+                        <div class="mb-2">
+                            <label for="tagName">نام تگ</label>
+                            <input class="form-control" type="text" name="tagName">
+                            <span class="text-danger">نام تگ نامعتبر است</span>
+                        </div>
+
+                        <div class="mb-2">
+                            <img id="previewImgTag" alt="">
+                            <button class="btn btn-warning fa fa-file-image" id="openFileTag"></button>
+                            <input type="file" class="d-none" id="tag-file" accept="image/*">
+                        </div>
+
+                        <div>
+                            <button type="submit" class="d-block m-auto btn btn-success fa fa-add"></button>
+                        </div>
+                        </d>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="./assets/vendor/jquery/jquery-3.7.0.js"></script>
+        <script src="./assets/vendor/bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+        <script src="./assets/js/products.js"></script>
+        <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "Vazir";
+    src: url("../fonts/Vazir.ttf");
+}
+
+* {
+    font-family: 'Vazir';
+}
+
+.aside {
+    transition: width 500ms linear;
+    height: 100vh;
+    background-color: rgb(32, 24, 15);
+    overflow-x: hidden;
+    color: wheat;
+    width: 0px;
+    position: fixed;
+    right: 0;
+    z-index: 999;
+    top: 100px;
+}
+
+.asideImg {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+main {
+    position: relative;
+    top: 170px;
+}
+
+
+.header {
+    transition: all 500ms linear;
+    background-color: rgb(239, 239, 239);
+    height: 100px;
+    box-shadow: 1px 1px 10px gray;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.controleUser{
+    gap: 5px;
+}
+
+.data *{
+    margin-top: 10px;
+}

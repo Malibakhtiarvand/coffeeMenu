@@ -10,6 +10,26 @@
 
 body {
     background-color: #27252b !important;
+    position: relative;
+}
+
+.aside {
+    transition: width 500ms linear;
+    height: 100vh;
+    background-color: rgb(32, 24, 15);
+    overflow-x: hidden;
+    color: wheat;
+    width: 0px;
+    position: fixed;
+    right: 0;
+    top: 50px;
+    z-index: 100;
+}
+
+.asideImg {
+    width: 90%;
+    display: block;
+    margin: auto;
 }
 
 header {
@@ -34,7 +54,7 @@ header {
     justify-content: center;
     column-gap: 10px;
     height: 150px;
-    background: linear-gradient(36deg,rgba(34, 31, 48, 0.3), rgba(233, 233, 233, 0.2));
+    background: linear-gradient(36deg, rgba(34, 31, 48, 0.3), rgba(233, 233, 233, 0.2));
 }
 
 .category-img {
@@ -155,4 +175,24 @@ header {
     100% {
         transform: translateX(0px);
     }
+}
+
+#previewImgTag {
+    display: block;
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+#blankPr-image-btn{
+    display: block;
+    margin: auto;
+    margin-top: -12px;
+}
+
+.input-blank-pr{
+    height: 25px;
+    margin: auto;
+    margin-top: 5px;
 }
