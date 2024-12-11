@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/vendor/fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="./assets/vendor/bootstrap-5.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/style/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <i class="fa fa-bars" style="font-size: 15pt;" id="open-aside"></i>
+        </div>
+
+        <div class="d-flex flex-column">
+            <img src="./assets/media/icons8-coffee-50.png" alt="">
+            <p class="text-center text-secondary">مدیریت کافه</p>
+        </div>
+    </header>
+
+    <main>
+        <aside class="aside">
+            <img src="./assets/media/peakpx (8).jpg" class="asideImg" alt="">
+            <ul>
+                <li>محصولات</li>
+                <li>سفارشات</li>
+                <li>آمار</li>
+            </ul>
+        </aside>
+
+        <div class="data">
+            <div class="infoOfShopParent">
+                <div class="text-center infoOfShop">
+                    <h3>تعداد فروش</h3>
+                    <p><span>400</span> محصول امروز</p>
+                </div>
+
+                <div class="text-center infoOfShop">
+                    <h3>تعداد فروش</h3>
+                    <p><span>400</span> محصول درکل</p>
+                </div>
+
+                <div class="text-center infoOfShop">
+                    <h3>مقدار درآمد</h3>
+                    <p><span>5000000</span> تومان امروز</p>
+                </div>
+
+
+                <div class="text-center infoOfShop">
+                    <h3>مقدار درآمد</h3>
+                    <p><span>5000000</span> تومان درکل</p>
+                </div>
+            </div>
+
+            <div>
+                <h1>نمودار ها</h1>
+
+                <div>
+                    <div id="most-product"></div>
+                    <div>
+                        نمودار از روز <input type="text"> تا روز <input type="text">
+                    </div>
+                    <div id="Progress-chart"></div>
+                    <select name="" id="">
+                        <option value="">روند پیش روی...</option>
+                        <option value="pr-1">محصول 1</option>
+                        <option value="pr-2">محصول 2</option>
+                        <option value="pr-3">محصول 3</option>
+                        <option value="pr-4">محصول 4</option>
+                        <option value="orderInDay">فروش در روز ها</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./assets/vendor/apexcharts/apexcharts.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

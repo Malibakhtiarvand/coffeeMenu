@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "Vazir";
+    src: url("../fonts/Vazir.ttf");
+}
+
+* {
+    font-family: 'Vazir';
+}
+
+.aside {
+    transition: width 500ms linear;
+    height: 100vh;
+    background-color: rgb(32, 24, 15);
+    overflow-x: hidden;
+    color: wheat;
+    width: 0px;
+    position: fixed;
+    right: 0;
+    z-index: 999;
+}
+
+.asideImg {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+main{
+    position: relative;
+    top: 100px;
+}
+
+
+.header {
+    transition: all 500ms linear;
+    background-color: rgb(239, 239, 239);
+    height: 100px;
+    box-shadow: 1px 1px 10px gray;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.infoOfShopParent {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.infoOfShop {
+    box-shadow: 1px 1px 10px gray;
+    transition: all 500ms linear;
+    flex: 1 auto;
+    border-radius: 10px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.infoOfShop:hover {
+    scale: 1.08;
+}
+
+main{
+    position: relative;
+    top: 100px;
+}
+
+.data {
+    padding: 10px;
+    overflow-x: hidden;
+}

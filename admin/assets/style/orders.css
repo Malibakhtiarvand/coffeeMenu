@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "Vazir";
+    src: url("../fonts/Vazir.ttf");
+}
+
+* {
+    font-family: 'Vazir';
+}
+
+.aside {
+    transition: width 500ms linear;
+    height: 100vh;
+    background-color: rgb(32, 24, 15);
+    overflow-x: hidden;
+    color: wheat;
+    width: 0px;
+    position: fixed;
+    right: 0;
+}
+
+.asideImg {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+main{
+    position: relative;
+    top: 100px;
+}
+
+
+.header {
+    transition: all 500ms linear;
+    background-color: rgb(239, 239, 239);
+    height: 100px;
+    box-shadow: 1px 1px 10px gray;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+body{
+    background-color: rgb(170, 153, 144);
+}
+
+.data{
+    transition: all 500ms linear;
+    padding: 10px;
+}
+
+.orders{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-items: center;
+}
+
+.orderImg{
+    width: 80px;
+    height: 80px;
+}
+
+.imgsOrder{
+    overflow-x: auto;
+    width: 300px;
+    margin: auto;
+    white-space: nowrap;
+}
+
+.order{
+    background-color: rgba(20, 300, 255, 0.2);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.actionsOrder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+@media (max-width: 1014px) {
+    .orders{
+        grid-template-columns: 1fr;
+    }
+}
