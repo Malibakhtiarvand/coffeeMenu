@@ -24,7 +24,7 @@
     margin: auto;
 }
 
-main{
+main {
     position: relative;
     top: 100px;
 }
@@ -45,42 +45,42 @@ main{
     z-index: 1;
 }
 
-body{
+body {
     background-color: rgb(170, 153, 144);
 }
 
-.data{
+.data {
     transition: all 500ms linear;
     padding: 10px;
 }
 
-.orders{
+.orders {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     justify-items: center;
 }
 
-.orderImg{
+.orderImg {
     width: 80px;
     height: 80px;
 }
 
-.imgsOrder{
+.imgsOrder {
     overflow-x: auto;
     width: 300px;
     margin: auto;
     white-space: nowrap;
 }
 
-.order{
+.order {
     background-color: rgba(20, 300, 255, 0.2);
     width: fit-content;
     padding: 10px;
     border-radius: 10px;
 }
 
-.actionsOrder{
+.actionsOrder {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -88,7 +88,14 @@ body{
 }
 
 @media (max-width: 1014px) {
-    .orders{
+    .orders {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .orders {
         grid-template-columns: 1fr;
     }
 }
